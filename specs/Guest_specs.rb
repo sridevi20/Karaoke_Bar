@@ -3,11 +3,11 @@ require('minitest/rg')
 require_relative("../guest.rb")
 class GuestTest < MiniTest::Test
   def setup()
-    @guest = Guest.new( "Devi" , 1000, "songsong")
+    @guest = Guest.new( "Devi" , 1000, "I was a liar")
 
-    @guest1 = Guest.new("Lara", 300, "cheap trilles")
-    @guest2 = Guest.new("Mary", 500, "shortgun")
-    @guest3 = Guest.new("Sri", 400, "adsfsggs")
+    @guest1 = Guest.new("Lara", 300, "one last time")
+    @guest2 = Guest.new("Mary", 500, "Take a seat")
+    @guest3 = Guest.new("Sri", 400, "The culb isn't the best place")
     @guests = [@guest1 ,@guest2 ]
 
   end
@@ -20,7 +20,7 @@ class GuestTest < MiniTest::Test
   end
 
   def test_get_favourite_song()
-    assert_equal("songsong", @guest.favourite_songs)
+    assert_equal("I was a liar", @guest.favourite_songs)
   end
   def test_add_guests()
     @guest.add_guests(@guest1)

@@ -13,9 +13,9 @@ class RoomsTest < MiniTest::Test
     # @room3 = Rooms.new("Double_size_room", "songsong")
     # @room4 = Rooms.new("Small_size_room", "asdfghhy")
   #  @list_of_rooms = [@room1, @room2, @room3, @room4]
-    @guest1 = Guest.new("Lara", 300, "cheap trilles")
-    @guest2 = Guest.new("Mary", 500, "shortgun")
-    @guest3 = Guest.new("Sri", 400, "adsfsggs")
+    @guest1 = Guest.new("Lara", 300, "one last time")
+    @guest2 = Guest.new("Mary", 500, "Take a seat")
+    @guest3 = Guest.new("Sri", 400, "The culb isn't the best place")
     @guests = [@guest1 ,@guest2 ,@guest3]
    end
 
